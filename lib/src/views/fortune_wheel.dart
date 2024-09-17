@@ -197,13 +197,19 @@ class _FortuneWheelState extends State<FortuneWheel>
   ///Handling mode spinning based on prioritized winning values
   Future<void> _handleSpinByPriorityPressed() async {
     if (!_wheelAnimationController.isAnimating) {
-      final int randomIndex = Random().nextInt(_fortuneValuesByPriority.length);
-      Fortune result = _fortuneValuesByPriority[randomIndex];
-      int index = widget.wheel.items.indexWhere((element) => element == result);
-      if (index == -1) {
-        _indexResult = 0;
+      // modify: find if there is a priority 0
+      final foundIndex = widget.wheel.items.indexWhere((e) => e.priority == 0);
+      if (foundIndex != -1) {
+        _indexResult = foundIndex;
       } else {
-        _indexResult = index;
+        final int randomIndex = Random().nextInt(_fortuneValuesByPriority.length);
+        Fortune result = _fortuneValuesByPriority[randomIndex];
+        int index = widget.wheel.items.indexWhere((element) => element == result);
+        if (index == -1) {
+          _indexResult = 0;
+        } else {
+          _indexResult = index;
+        }
       }
 
       int itemCount = widget.wheel.items.length;
