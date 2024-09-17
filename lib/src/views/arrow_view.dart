@@ -8,7 +8,7 @@ class ArrowView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.rotate(
-      angle: pi / 2,
+      angle: pi * 2,
       child: ClipPath(
         clipper: _ArrowClipper(),
         child: Container(

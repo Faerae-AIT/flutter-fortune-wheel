@@ -128,7 +128,7 @@ class _FortuneWheelState extends State<FortuneWheel>
               height: wheelSize,
               width: wheelSize,
               child: Align(
-                alignment: const Alignment(1.08, 0),
+                alignment: const Alignment(0, -1),
                 child: widget.wheel.arrowView ?? const ArrowView(),
               ),
             ),

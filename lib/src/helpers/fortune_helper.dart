@@ -12,8 +12,10 @@ List<Fortune> getFortuneValuesByPriority(List<Fortune> items) {
 }
 
 ///Processing the rotation angle of the lucky value
-double getRotateOfItem(int itemsCount, int index) =>
-    (index / itemsCount) * 2 * math.pi + math.pi / 2;
+double getRotateOfItem(int itemsCount, int index) {
+  // (index / itemsCount) * 2 * math.pi + math.pi / 2
+  return (index / itemsCount) * 2 * math.pi;
+}
 
 ///Handling check for light or dark mode
 bool isColorDark(Color color) {
