@@ -53,65 +53,75 @@ class Constants {
   ];
 
   static List<Fortune> list12Item = <Fortune>[
-    Fortune(
+    const Fortune(
         id: 1,
-        titleName: '1',
-        backgroundColor: Colors.primaries[0],
+        titleName: 'Reward 1',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.red,
+        textStyle: TextStyle(color: Colors.white),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 2,
-        titleName: '2',
-        backgroundColor: Colors.primaries[2],
+        titleName: 'Reward 2',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.white,
+        textStyle: TextStyle(color: Colors.black),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 3,
-        titleName: '3',
-        backgroundColor: Colors.primaries[4],
+        titleName: 'Reward 3',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.red,
+        textStyle: TextStyle(color: Colors.white),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 4,
-        titleName: '4',
-        backgroundColor: Colors.primaries[6],
+        titleName: 'Reward 4',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.white,
+        textStyle: TextStyle(color: Colors.black),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 5,
-        titleName: '5',
-        backgroundColor: Colors.primaries[8],
-        priority: 1),
-    Fortune(
+        titleName: 'Reward 5',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.red,
+        textStyle: TextStyle(color: Colors.white),
+        priority: 0),
+    const Fortune(
         id: 6,
-        titleName: '6',
-        backgroundColor: Colors.primaries[10],
+        titleName: 'Reward 6',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.white,
+        textStyle: TextStyle(color: Colors.black),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 7,
-        titleName: '7',
-        backgroundColor: Colors.primaries[12],
+        titleName: 'Reward 7',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.red,
+        textStyle: TextStyle(color: Colors.white),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 8,
-        titleName: '8',
-        backgroundColor: Colors.primaries[14],
+        titleName: 'Reward 8',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.white,
+        textStyle: TextStyle(color: Colors.black),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 9,
-        titleName: '9',
-        backgroundColor: Colors.primaries[9],
+        titleName: 'Reward 9',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.red,
+        textStyle: TextStyle(color: Colors.white),
         priority: 1),
-    Fortune(
+    const Fortune(
         id: 10,
-        titleName: '10',
-        backgroundColor: Colors.primaries[1],
-        priority: 1),
-    Fortune(
-        id: 11,
-        titleName: '11',
-        backgroundColor: Colors.primaries[8],
-        priority: 1),
-    Fortune(
-        id: 12,
-        titleName: '12',
-        backgroundColor: Colors.primaries[12],
+        titleName: 'Reward 10',
+        icon: Icon(Icons.favorite),
+        backgroundColor: Colors.white,
+        textStyle: TextStyle(color: Colors.black),
         priority: 1),
   ];
 

@@ -70,15 +70,22 @@ class BoardView extends StatelessWidget {
       height: size,
       width: size,
       alignment: Alignment.topCenter,
-      padding: const EdgeInsets.only(top: 16),
+      padding: const EdgeInsets.only(top: 15),
       child: ConstrainedBox(
-        constraints: BoxConstraints.expand(height: size / 3, width: 54),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (fortune.titleName != null)
-              Flexible(
-                child: AutoSizeText(
+        constraints: BoxConstraints.expand(height: size / 2.6, width: 54),
+        child: Container(
+          color: Colors.transparent,
+          child: RotatedBox(
+            quarterTurns: 3,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: null,
+                  icon: fortune.icon!,
+                ),
+                AutoSizeText(
                   fortune.titleName!,
                   style: fortune.textStyle ??
                       const TextStyle(
@@ -89,13 +96,9 @@ class BoardView extends StatelessWidget {
                   maxFontSize: 20,
                   overflow: TextOverflow.clip,
                 ),
-              ),
-            if (fortune.icon != null)
-              Padding(
-                padding: EdgeInsets.all(fortune.titleName != null ? 8 : 0),
-                child: fortune.icon!,
-              ),
-          ],
+              ],
+            ),
+          ),
         ),
       ),
     );
